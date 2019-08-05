@@ -1,0 +1,89 @@
+
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.admin",
+                "name": null,
+                "platform": "person",
+                "unique_id": "9dd4695be83641e09680390e5340ffa1"
+            },
+            {
+                "config_entry_id": "00a4abd831a046959ea6cec249870eed",
+                "device_id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "disabled_by": null,
+                "entity_id": "camera.q6035_e_0",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "00408CBA0DB7-camera"
+            },
+            {
+                "config_entry_id": "00a4abd831a046959ea6cec249870eed",
+                "device_id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.q6035_e_0_motion_4",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "00408CBA0DB7-tns1:VideoAnalytics/tnsaxis:MotionDetection-4"
+            },
+            {
+                "config_entry_id": "00a4abd831a046959ea6cec249870eed",
+                "device_id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.q6035_e_0_motion_3",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "00408CBA0DB7-tns1:VideoAnalytics/tnsaxis:MotionDetection-3"
+            },
+            {
+                "config_entry_id": "00a4abd831a046959ea6cec249870eed",
+                "device_id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.q6035_e_0_motion_2",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "00408CBA0DB7-tns1:VideoAnalytics/tnsaxis:MotionDetection-2"
+            },
+            {
+                "config_entry_id": "00a4abd831a046959ea6cec249870eed",
+                "device_id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.q6035_e_0_motion_1",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "00408CBA0DB7-tns1:VideoAnalytics/tnsaxis:MotionDetection-1"
+            },
+            {
+                "config_entry_id": "00a4abd831a046959ea6cec249870eed",
+                "device_id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.q6035_e_0_motion_0",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "00408CBA0DB7-tns1:VideoAnalytics/tnsaxis:MotionDetection-0"
+            },
+            {
+                "config_entry_id": "5b8b9742257d4250b855ab6405a404f5",
+                "device_id": "08017bb6e1a946b58f05ab9a60febc33",
+                "disabled_by": null,
+                "entity_id": "camera.m3044_v_0",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "ACCC8E7C3240-camera"
+            },
+            {
+                "config_entry_id": "42ad457e96d74a089817a8f2cfbe4d69",
+                "device_id": "b63a69c4f8674b379a24d2f9f043bbcb",
+                "disabled_by": null,
+                "entity_id": "camera.m3044_v_1",
+                "name": null,
+                "platform": "axis",
+                "unique_id": "ACCC8E7C3232-camera"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
