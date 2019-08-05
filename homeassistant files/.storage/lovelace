@@ -1,0 +1,655 @@
+
+{
+    "data": {
+        "config": {
+            "background": "var(--background-image)",
+            "title": "NBGS",
+            "views": [
+                {
+                    "badges": [
+                        "binary_sensor.q6035_e_0_motion_1",
+                        "binary_sensor.q6035_e_0_motion_0",
+                        "sun.sun",
+                        "sensor.yr_temperature",
+                        "sensor.yr_precipitation",
+                        "sensor.yr_humidity"
+                    ],
+                    "cards": [
+                        {
+                            "entity": "camera.q6035_e_0",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.ip_webcam_battery_level"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_battery_voltage"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_motion"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_sound"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_battery_temperature"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_pressure"
+                                },
+                                {
+                                    "entity": "switch.ip_webcam_torch_2"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.ip_webcam_pressure",
+                            "max": 1030,
+                            "min": 0,
+                            "severity": {
+                                "green": 1013,
+                                "red": 1015,
+                                "yellow": 1000
+                            },
+                            "theme": "Backend-selected",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "media_player.sharp_aquos_tv",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "camera.m3044_v_0",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.ip_webcam_battery_level_2"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_battery_temperature_2"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_battery_voltage_2"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_light_level_2"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_motion_2"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_proximity_2"
+                                },
+                                {
+                                    "entity": "sensor.ip_webcam_sound_2"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "camera.m3044_v_1",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.nodemcu"
+                                },
+                                {
+                                    "entity": "switch.nodemcu2"
+                                },
+                                {
+                                    "entity": "switch.nodemcu3"
+                                },
+                                {
+                                    "entity": "switch.nodemcu4"
+                                },
+                                {
+                                    "entity": "switch.nodemcu5"
+                                },
+                                {
+                                    "entity": "switch.nodemcu6"
+                                },
+                                {
+                                    "entity": "switch.nodemcu7"
+                                },
+                                {
+                                    "entity": "switch.nodemcu8"
+                                }
+                            ],
+                            "title": "switches",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "switch.nodemcu",
+                            "hold_action": {
+                                "action": "more-info"
+                            },
+                            "show_icon": true,
+                            "show_name": true,
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "theme": "Backend-selected",
+                            "type": "entity-button"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.nodemcu"
+                                }
+                            ],
+                            "type": "glance"
+                        }
+                    ],
+                    "icon": "",
+                    "panel": false,
+                    "path": "default_view",
+                    "theme": "Backend-selected",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "100%",
+                            "type": "iframe",
+                            "url": "http://192.168.4.80"
+                        }
+                    ],
+                    "icon": "mdi:leaf",
+                    "panel": true,
+                    "path": "",
+                    "theme": "Backend-selected",
+                    "title": "GreenHouse"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "100%",
+                            "type": "iframe",
+                            "url": "http://192.168.4.207"
+                        }
+                    ],
+                    "icon": "mdi:coin",
+                    "panel": true,
+                    "title": "Tollbooth"
+                },
+                {
+                    "badges": [],
+                    "cards": [],
+                    "icon": "mdi:account-multiple",
+                    "title": "Baker Hall"
+                },
+                {
+                    "badges": [
+                        "sensor.router",
+                        "sensor.24portedu",
+                        "sensor.48portedu",
+                        "sensor.viscenter",
+                        "sensor.hort",
+                        "sensor.admin",
+                        "sensor.library",
+                        "sensor.wow",
+                        "sensor.greenhouse",
+                        "sensor.it",
+                        "sensor.maint",
+                        "sensor.cafe",
+                        "sensor.rosehall",
+                        "sensor.tollbooth",
+                        "sensor.admintiger",
+                        "sensor.giftshop",
+                        "sensor.hortswitch2",
+                        "sensor.gardenexp",
+                        "sensor.sql03",
+                        "sensor.dc02",
+                        "sensor.hv01",
+                        "sensor.xibo",
+                        "binary_sensor.altru",
+                        "binary_sensor.altru_home",
+                        "binary_sensor.altru_login_page",
+                        "binary_sensor.altru_ping",
+                        "binary_sensor.garden_explorer",
+                        "binary_sensor.nbgs_gateway",
+                        "binary_sensor.nbgs_website",
+                        "binary_sensor.sophos_router",
+                        "binary_sensor.cradlepoint_modem",
+                        "binary_sensor.admin_hvac",
+                        "binary_sensor.geoserver",
+                        "binary_sensor.wvec_camera"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.gardenexp"
+                                },
+                                {
+                                    "entity": "sensor.sql03"
+                                },
+                                {
+                                    "entity": "sensor.dc02"
+                                },
+                                {
+                                    "entity": "sensor.hv01"
+                                },
+                                {
+                                    "entity": "sensor.xibo"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Server Status",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.router"
+                                },
+                                {
+                                    "entity": "sensor.24portedu"
+                                },
+                                {
+                                    "entity": "sensor.48portedu"
+                                },
+                                {
+                                    "entity": "sensor.viscenter"
+                                },
+                                {
+                                    "entity": "sensor.hort"
+                                },
+                                {
+                                    "entity": "sensor.admin"
+                                },
+                                {
+                                    "entity": "sensor.library"
+                                },
+                                {
+                                    "entity": "sensor.wow"
+                                },
+                                {
+                                    "entity": "sensor.greenhouse"
+                                },
+                                {
+                                    "entity": "sensor.it"
+                                },
+                                {
+                                    "entity": "sensor.maint"
+                                },
+                                {
+                                    "entity": "sensor.cafe"
+                                },
+                                {
+                                    "entity": "sensor.rosehall"
+                                },
+                                {
+                                    "entity": "sensor.tollbooth"
+                                },
+                                {
+                                    "entity": "sensor.admintiger"
+                                },
+                                {
+                                    "entity": "sensor.giftshop"
+                                },
+                                {
+                                    "entity": "sensor.hortswitch2"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Switch Status",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.speedtest_upload",
+                            "max": 60,
+                            "min": 0,
+                            "severity": {
+                                "green": 30,
+                                "red": 10,
+                                "yellow": 20
+                            },
+                            "theme": "Backend-selected",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.speedtest_download",
+                            "max": 300,
+                            "min": 0,
+                            "severity": {
+                                "green": 0,
+                                "red": 0,
+                                "yellow": 0
+                            },
+                            "theme": "Backend-selected",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.speedtest_download"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_upload"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_ping"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "SpeedTest",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.admin_auditorium_ap"
+                                },
+                                {
+                                    "entity": "sensor.admin_offices_ap"
+                                },
+                                {
+                                    "entity": "sensor.admin_rotunda_ap"
+                                },
+                                {
+                                    "entity": "sensor.cafe_ap"
+                                },
+                                {
+                                    "entity": "sensor.education_offices_ap"
+                                },
+                                {
+                                    "entity": "sensor.facilities_ap"
+                                },
+                                {
+                                    "entity": "sensor.giftshop_ap"
+                                },
+                                {
+                                    "entity": "sensor.greenhouse_ap"
+                                },
+                                {
+                                    "entity": "sensor.holly_room_ap"
+                                },
+                                {
+                                    "entity": "sensor.horticulture_ap"
+                                },
+                                {
+                                    "entity": "sensor.library_ap"
+                                },
+                                {
+                                    "entity": "sensor.outdoor1_bakerhall_ap"
+                                },
+                                {
+                                    "entity": "sensor.outdoor2_tickethut_ap"
+                                },
+                                {
+                                    "entity": "sensor.outdoor3_wow_ap"
+                                },
+                                {
+                                    "entity": "sensor.rose_garden_breezeway_ap"
+                                },
+                                {
+                                    "entity": "sensor.rose_garden_hall_ap"
+                                },
+                                {
+                                    "entity": "sensor.visitors_services_ap"
+                                },
+                                {
+                                    "entity": "sensor.wow_ap"
+                                },
+                                {
+                                    "entity": "sensor.tollbooth_ap"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Access Point Status",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.disk_use_percent_home"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "System Monitor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.ups_name"
+                                },
+                                {
+                                    "entity": "sensor.ups_model"
+                                },
+                                {
+                                    "entity": "sensor.ups_mode"
+                                },
+                                {
+                                    "entity": "sensor.ups_daemon_info"
+                                },
+                                {
+                                    "entity": "sensor.ups_battery"
+                                },
+                                {
+                                    "entity": "sensor.ups_battery_shutdown"
+                                },
+                                {
+                                    "entity": "sensor.ups_time_left"
+                                },
+                                {
+                                    "entity": "sensor.ups_shutdown_time"
+                                },
+                                {
+                                    "entity": "sensor.ups_input_voltage"
+                                },
+                                {
+                                    "entity": "sensor.ups_input_voltage_high"
+                                },
+                                {
+                                    "entity": "sensor.ups_input_voltage_low"
+                                },
+                                {
+                                    "entity": "sensor.ups_load"
+                                },
+                                {
+                                    "entity": "sensor.ups_output_voltage"
+                                },
+                                {
+                                    "entity": "sensor.ups_battery_timeout"
+                                },
+                                {
+                                    "entity": "sensor.ups_status"
+                                },
+                                {
+                                    "entity": "sensor.ups_status_data"
+                                },
+                                {
+                                    "entity": "sensor.ups_driver"
+                                },
+                                {
+                                    "entity": "sensor.ups_hostname"
+                                },
+                                {
+                                    "entity": "sensor.ups_cable_type"
+                                },
+                                {
+                                    "entity": "sensor.ups_startup_time"
+                                },
+                                {
+                                    "entity": "sensor.ups_status_date"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "UPS SERVERROOM",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.breaches_administrator_nbgs_org"
+                                },
+                                {
+                                    "entity": "sensor.breaches_david_foss_nbgs_org"
+                                },
+                                {
+                                    "entity": "sensor.breaches_don_brown_nbgs_org"
+                                },
+                                {
+                                    "entity": "sensor.breaches_doug_ward_nbgs_org"
+                                },
+                                {
+                                    "entity": "sensor.breaches_education_nbgs_org"
+                                },
+                                {
+                                    "entity": "sensor.breaches_kelly_welsh_nbgs_org"
+                                },
+                                {
+                                    "entity": "sensor.breaches_nbgeducation_gmail_com"
+                                },
+                                {
+                                    "entity": "sensor.breaches_nbgsaltru_gmail_com"
+                                },
+                                {
+                                    "entity": "sensor.breaches_dougward_nbgs_onmicrosoft_com"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Youvebeenpwned",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:home",
+                    "panel": false,
+                    "title": "Education"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.traffic_sign"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_status"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_error"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_message"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_page1"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_page2"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_page3"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_page4"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_battery"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_solar"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_boards"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_outputs"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_inputs"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_date"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_time"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_lat"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_lon"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_speed"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_course"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_utc"
+                                },
+                                {
+                                    "entity": "sensor.traffic_sign_modemreset"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Traffic Sign",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:screwdriver",
+                    "title": "Maintenance"
+                },
+                {
+                    "badges": [],
+                    "cards": [],
+                    "icon": "mdi:flower",
+                    "title": "Horticulture"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "dominos.medium_pan"
+                                },
+                                {
+                                    "entity": "dominos.plain_wings"
+                                },
+                                {
+                                    "entity": "dominos.chicken_alfredo"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Dominoes",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:palette",
+                    "title": "WOW"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "media_player.sharp_aquos_tv",
+                            "type": "media-control"
+                        }
+                    ],
+                    "icon": "mdi:newspaper",
+                    "title": "Admin"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
