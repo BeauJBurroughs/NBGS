@@ -1,0 +1,95 @@
+- id: '1563289874035'
+  alias: xibo notification
+  trigger:
+  - entity_id: sensor.xibo
+    from: '1'
+    platform: state
+    to: '0'
+  condition: []
+  action:
+  - data:
+      message: Xibo changed state
+      title: XIBO
+    service: persistent_notification.create
+- id: '1563299936066'
+  alias: cloudy-navyblue
+  trigger:
+  - above: '80'
+    below: '101'
+    entity_id: sensor.yr_cloudiness
+    platform: numeric_state
+  condition: []
+  action:
+  - data:
+      name: Navy Blue & Yellow
+    service: frontend.set_theme
+- id: '1563305406983'
+  alias: lesscloudy-cyan
+  trigger:
+  - above: '0'
+    below: '80'
+    entity_id: sensor.yr_cloudiness
+    platform: numeric_state
+  condition: []
+  action:
+  - data:
+      name: Light - Cyan
+    service: frontend.set_theme
+- id: '1563377557577'
+  alias: switch_notification_test
+  trigger:
+  - entity_id: switch.nodemcu
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      message: test
+    service: persistent_notification.create
+- id: '1563384684191'
+  alias: cox_goes_off
+  trigger:
+  - entity_id: binary_sensor.sophos_router
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - service: shell_command.failover
+- id: '1563384944768'
+  alias: cox_goes_on
+  trigger:
+  - entity_id: binary_sensor.sophos_router
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - service: shell_command.fallback
+- id: '1563562055457'
+  alias: set theme at startup
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      name: Light - Cyan
+    service: frontend.set_theme
+- id: '1563978481223'
+  alias: Traffic Sign Location updater
+  trigger:
+  - entity_id: sensor.traffic_sign_lat
+    platform: state
+  - entity_id: sensor.traffic_sign_lon
+    platform: state
+  condition: []
+  action:
+  - data:
+      payload_template: '{"latitude":"{{ (states(''sensor.traffic_sign_lat'') | float
+        - 3600) | multiply(1/60) | float + 36 }}","longitude":"{{ (states(''sensor.traffic_sign_lon'')
+        | float + 7600) | multiply(1/60) | float - 76  }}","gps_accuracy": "5", "battery_level":"{{states(''sensor.traffic_sign_battery'')}}"}'
+      retain: 'true'
+      topic: location/traffic/sign
+    service: mqtt.publish
