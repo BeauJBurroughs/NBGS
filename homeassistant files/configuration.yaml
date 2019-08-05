@@ -462,10 +462,12 @@ sensor:
         value_template: '{{ states.sensor.traffic_sign.attributes["BOARDS"] }}'
       traffic_sign_battery:
         friendly_name: Traffic Sign BATTERY
-        value_template: '{{ states.sensor.traffic_sign.attributes["BATTERY"] }}'
+        value_template: '{{ states.sensor.traffic_sign.attributes["BATTERY"][0:-1] }}'
+        unit_of_measurement: "V"
       traffic_sign_solar:
         friendly_name: Traffic Sign SOLAR
-        value_template: '{{ states.sensor.traffic_sign.attributes["SOLAR"] }}'
+        value_template: '{{ states.sensor.traffic_sign.attributes["SOLAR"][0:-1] }}'
+        unit_of_measurement: "V"
       traffic_sign_outputs:
         friendly_name: Traffic Sign OUTPUTS
         value_template: '{{ states.sensor.traffic_sign.attributes["OUTPUTS"] }}'
@@ -486,10 +488,12 @@ sensor:
         value_template: '{{ states.sensor.traffic_sign.attributes["LON"] }}'
       traffic_sign_speed:
         friendly_name: Traffic Sign SPEED
-        value_template: '{{ states.sensor.traffic_sign.attributes["SPEED"] }}'
+        value_template: '{{ states.sensor.traffic_sign.attributes["SPEED"][0:-5] }}'
+        unit_of_measurement: "km/h"
       traffic_sign_course:
         friendly_name: Traffic Sign COURSE
-        value_template: '{{ states.sensor.traffic_sign.attributes["COURSE"] }}'
+        value_template: '{{ states.sensor.traffic_sign.attributes["COURSE"][0:-4] }}'
+        unit_of_measurement: "deg"
       traffic_sign_utc:
         friendly_name: Traffic Sign UTC
         value_template: '{{ states.sensor.traffic_sign.attributes["UTC"] }}'
