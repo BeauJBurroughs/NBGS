@@ -1,0 +1,214 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "device": {
+                        "host": "cameraip",
+                        "password": "campassword",
+                        "port": 80,
+                        "username": "camusername"
+                    },
+                    "mac": "00408CBA0DB7",
+                    "model": "Q6035-E",
+                    "name": "Q6035-E 0"
+                },
+                "domain": "axis",
+                "entry_id": "00a4abd831a046959ea6cec249870eed",
+                "options": {
+                    "camera": true,
+                    "events": true,
+                    "trigger_time": 0
+                },
+                "source": "user",
+                "title": "Q6035-E - 00408CBA0DB7",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:account-multiple",
+                    "latitude": 36.901565,
+                    "longitude": -76.200142,
+                    "name": "BakerHall",
+                    "passive": false,
+                    "radius": 100.0
+                },
+                "domain": "zone",
+                "entry_id": "4fe8637910f84920bf0fe56f8e0ab51d",
+                "options": {},
+                "source": "user",
+                "title": "BakerHall",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:castle",
+                    "latitude": 36.907458,
+                    "longitude": -76.198846,
+                    "name": "GreenHouse",
+                    "passive": false,
+                    "radius": 100.0
+                },
+                "domain": "zone",
+                "entry_id": "e373e3ad579345528571d6d61d36ed71",
+                "options": {},
+                "source": "user",
+                "title": "GreenHouse",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:palette",
+                    "latitude": 36.90513,
+                    "longitude": -76.199247,
+                    "name": "WOW",
+                    "passive": false,
+                    "radius": 100.0
+                },
+                "domain": "zone",
+                "entry_id": "7ed0807b5be147bf89440844308ad2b8",
+                "options": {},
+                "source": "user",
+                "title": "WOW",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:screwdriver",
+                    "latitude": 36.907059,
+                    "longitude": -76.201207,
+                    "name": "Maintenance",
+                    "passive": false,
+                    "radius": 50.0
+                },
+                "domain": "zone",
+                "entry_id": "305886e7de7f4d5dbe72c24a753490aa",
+                "options": {},
+                "source": "user",
+                "title": "Maintenance",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:flower",
+                    "latitude": 36.907102,
+                    "longitude": -76.200324,
+                    "name": "Hort",
+                    "passive": false,
+                    "radius": 50.0
+                },
+                "domain": "zone",
+                "entry_id": "53253100b52d459080b2e7ff9f1ec73a",
+                "options": {},
+                "source": "user",
+                "title": "Hort",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:newspaper",
+                    "latitude": 36.901516,
+                    "longitude": -76.201712,
+                    "name": "Admin",
+                    "passive": false,
+                    "radius": 100.0
+                },
+                "domain": "zone",
+                "entry_id": "571cfc75e77e4644b1795ef296233f28",
+                "options": {},
+                "source": "user",
+                "title": "Admin",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "icon": "mdi:boom-gate",
+                    "latitude": 36.902998,
+                    "longitude": -76.205592,
+                    "name": "TollBooth",
+                    "passive": false,
+                    "radius": 50.0
+                },
+                "domain": "zone",
+                "entry_id": "8ed3185fccda478f86a6941ae375127c",
+                "options": {},
+                "source": "user",
+                "title": "TollBooth",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "device": {
+                        "host": "cameraip",
+                        "password": "Camerapassword",
+                        "port": 80,
+                        "username": "camerausername"
+                    },
+                    "mac": "ACCC8E7C3240",
+                    "model": "M3044-V",
+                    "name": "M3044-V 0"
+                },
+                "domain": "axis",
+                "entry_id": "5b8b9742257d4250b855ab6405a404f5",
+                "options": {
+                    "camera": true,
+                    "events": true,
+                    "trigger_time": 0
+                },
+                "source": "user",
+                "title": "M3044-V - ACCC8E7C3240",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "device": {
+                        "host": "cameraip113",
+                        "password": "camerapassword",
+                        "port": 80,
+                        "username": "camerausername"
+                    },
+                    "mac": "ACCC8E7C3232",
+                    "model": "M3044-V",
+                    "name": "M3044-V 1"
+                },
+                "domain": "axis",
+                "entry_id": "42ad457e96d74a089817a8f2cfbe4d69",
+                "options": {
+                    "camera": true,
+                    "events": true,
+                    "trigger_time": 0
+                },
+                "source": "user",
+                "title": "M3044-V - ACCC8E7C3232",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "broker": "localhost",
+                    "discovery": true,
+                    "password": "password",
+                    "port": 1883,
+                    "username": "useranme"
+                },
+                "domain": "mqtt",
+                "entry_id": "50430e88f9d345a6acdc7a58425b33eb",
+                "options": {},
+                "source": "user",
+                "title": "localhost",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
