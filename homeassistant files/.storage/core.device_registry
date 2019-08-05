@@ -1,0 +1,82 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": "801698954c044db89df5c37136790f3e",
+                "config_entries": [
+                    "00a4abd831a046959ea6cec249870eed"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:40:8c:ba:0d:b7"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "da0dcb7769b64138b0a2c749b1a2a9ad",
+                "identifiers": [
+                    [
+                        "axis",
+                        "00408CBA0DB7"
+                    ]
+                ],
+                "manufacturer": "Axis Communications AB",
+                "model": "Q6035-E PTZ Dome Network Camera",
+                "name": "Q6035-E 0",
+                "name_by_user": null,
+                "sw_version": "5.41.1.7"
+            },
+            {
+                "area_id": "d56467c1912849a3aa75a05198c75a51",
+                "config_entries": [
+                    "5b8b9742257d4250b855ab6405a404f5"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ac:cc:8e:7c:32:40"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "08017bb6e1a946b58f05ab9a60febc33",
+                "identifiers": [
+                    [
+                        "axis",
+                        "ACCC8E7C3240"
+                    ]
+                ],
+                "manufacturer": "Axis Communications AB",
+                "model": "M3044-V Network Camera",
+                "name": "M3044-V 0",
+                "name_by_user": null,
+                "sw_version": "6.15.6"
+            },
+            {
+                "area_id": "d56467c1912849a3aa75a05198c75a51",
+                "config_entries": [
+                    "42ad457e96d74a089817a8f2cfbe4d69"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ac:cc:8e:7c:32:32"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "b63a69c4f8674b379a24d2f9f043bbcb",
+                "identifiers": [
+                    [
+                        "axis",
+                        "ACCC8E7C3232"
+                    ]
+                ],
+                "manufacturer": "Axis Communications AB",
+                "model": "M3044-V Network Camera",
+                "name": "M3044-V 1",
+                "name_by_user": null,
+                "sw_version": "6.15.6"
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
