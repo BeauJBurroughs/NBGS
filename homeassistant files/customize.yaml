@@ -1,0 +1,60 @@
+sensor.ip_webcam_battery_level:
+  friendly_name: Battery Level
+sensor.ip_webcam_battery_level_2:
+  friendly_name: Battery Level 2
+sensor.ip_webcam_battery_temperature:
+  friendly_name: Battery Temperature
+sensor.ip_webcam_battery_voltage:
+  friendly_name: Battery Voltage
+sensor.ip_webcam_battery_voltage_2:
+  friendly_name: Battery Voltage
+sensor.ip_webcam_battery_temperature_2:
+  friendly_name: Battery Temperature
+sensor.ip_webcam_light_level:
+  friendly_name: Light Level
+switch.ip_webcam_torch:
+  friendly_name: Torch
+switch.ip_webcam_torch_2:
+  friendly_name: Torch
+sensor.ip_webcam_sound:
+  friendly_name: Sound
+sensor.ip_webcam_light_level_2:
+  friendly_name: Light Level
+sensor.ip_webcam_sound_2:
+  friendly_name: Sound
+sensor.ip_webcam_proximity:
+  friendly_name: Proximity
+sensor.ip_webcam_proximity_2:
+  friendly_name: Proximity
+sensor.ip_webcam_pressure_2:
+  friendly_name: Pressure
+sensor.ip_webcam_pressure:
+  friendly_name: Pressure
+sensor.ip_webcam_motion:
+  friendly_name: Motion
+sensor.ip_webcam_motion_2:
+  friendly_name: Motion
+binary_sensor.q6035_e_0_motion_0:
+  friendly_name: Motion 0
+binary_sensor.q6035_e_0_motion_1:
+  friendly_name: Motion 1
+sensor.yr_temperature:
+  friendly_name: Temperature
+sensor.yr_precipitation:
+  friendly_name: Precipitation
+sensor.yr_humidity:
+  friendly_name: Humidity
+zone.greenhouse:
+  icon: mdi:leaf
+zone.tollbooth:
+  icon: mdi:coin
+#sensor.router:
+#  templates:
+#    theme: >
+#      if (state === '1') return 'green';
+#      return 'red';
+#sensor.library:
+#  templates:
+#    theme: >
+#      if (state === '1') return 'green';
+#      return 'red';
