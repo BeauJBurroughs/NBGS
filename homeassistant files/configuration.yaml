@@ -1,0 +1,722 @@
+homeassistant:
+  customize: !include customize.yaml
+# Configure a default setup of Home Assistant (frontend, api, etc)
+frontend:
+  javascript_version: latest
+  themes: !include themes.yaml
+
+default_config:
+python_script:
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+#http:
+#  ssl_certificate: /config/certificate.pem
+#  ssl_key: /config/privkey.pem
+
+#  server_port:
+#   base_url: example.duckdns.org:8123
+
+#speedtestdotnet
+speedtestdotnet:
+  server_id: 16612
+  scan_interval:
+    minutes: 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+#apcupsd
+apcupsd:
+  host: localhost
+
+#binary_sensors
+binary_sensor:
+  - platform: uptimerobot
+    api_key: xxxxxxxxxxxxxxxxxxxxxxxx
+
+
+# Sensors
+sensor:
+  # Weather prediction
+  - platform: yr
+    monitored_conditions:
+      - temperature
+      - symbol
+      - precipitation
+      - windSpeed
+      - pressure
+      - windDirection
+      - humidity
+      - fog
+      - cloudiness
+      - lowClouds
+      - mediumClouds
+      - highClouds
+      - dewpointTemperature
+#hdTemp
+#  - platform: command_line
+#    name: HD Temperature
+#    command: "hddtemp -n /dev/sda"
+#    unit_of_measusrement: "°C"
+#Cpu Temp
+#  - platform: command_line
+#    name: CPU Temperature
+#    command: "cat /sys/class/thermal/cooling_device1/cur_state"
+#    value_template: '{{ value | multiply(0.001) | round(1) }}'
+#Router
+  - platform: command_line
+    name: Router
+    command: 'ping -c 1 X.X.X.X1 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#24PortEdu Switch
+  - platform: command_line
+    name: 24PortEdu
+    command: 'ping -c 1 X.X.X.X3 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#48PortEdu Switch
+  - platform: command_line
+    name: 48PortEdu
+    command: 'ping -c 1 X.X.X.X4 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Vis-Center Switch
+  - platform: command_line
+    name: VisCenter
+    command: 'ping -c 1 X.X.X.X5 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Hort-Switch
+  - platform: command_line
+    name: Hort
+    command: 'ping -c 1 X.X.X.X6 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Admin Switch
+  - platform: command_line
+    name: Admin
+    command: 'ping -c 1 X.X.X.X7 | grep "1 received" | wc -l'
+   #device_class: connectivity
+   # payload_on: 1
+   # payload_off: 0
+#Library
+  - platform: command_line
+    name: Library
+    command: 'ping -c 1 X.X.X.X8 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Wow
+  - platform: command_line
+    name: Wow
+    command: 'ping -c 1 X.X.X.X9 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Greenhouse
+  - platform: command_line
+    name: GreenHouse
+    command: 'ping -c 1 X.X.X.X10 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#ITSwitch
+  - platform: command_line
+    name: IT
+    command: 'ping -c 1 X.X.X.X11 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Maintenance
+  - platform: command_line
+    name: Maint
+    command: 'ping -c 1 X.X.X.X12 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Cafe
+  - platform: command_line
+    name: Cafe
+    command: 'ping -c 1 X.X.X.X18 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#RoseHall
+  - platform: command_line
+    name: RoseHall
+    command: 'ping -c 1 X.X.X.X19 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#TollBooth
+  - platform: command_line
+    name: TollBooth
+    command: 'ping -c 1 X.X.X.X21 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#AdminTiger
+  - platform: command_line
+    name: AdminTiger
+    command: 'ping -c 1 X.X.X.X22 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Giftshop
+  - platform: command_line
+    name: Giftshop
+    command: 'ping -c 1 X.X.X.X23 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#HortSwitch2
+  - platform: command_line
+    name: HortSwitch2
+    command: 'ping -c 1 X.X.X.X24 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#accessPoints
+#Admin_Offices_AP
+  - platform: command_line
+    name: Admin_Offices_AP
+    command: 'ping -c 1 X.X.X.X239 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Holly_Room_AP
+  - platform: command_line
+    name: Holly_Room_AP
+    command: 'ping -c 1 X.X.X.X221 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Admin_Auditorium_AP
+  - platform: command_line
+    name: Admin_Auditorium_AP
+    command: 'ping -c 1 X.X.X.X240 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Admin_Rotunda_AP
+  - platform: command_line
+    name: Admin_Rotunda_AP
+    command: 'ping -c 1 X.X.X.X238 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#OUTDOOR3_wow_AP
+  - platform: command_line
+    name: OUTDOOR3_wow_AP
+    command: 'ping -c 1 X.X.X.X234 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Education_Offices_AP
+  - platform: command_line
+    name: Education_offices_AP
+    command: 'ping -c 1 X.X.X.X222 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Horticulture_AP
+  - platform: command_line
+    name: Horticulture_AP
+    command: 'ping -c 1 X.X.X.X225 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Giftshop_AP
+  - platform: command_line
+    name: Giftshop_AP
+    command: 'ping -c 1 X.X.X.X231 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#RoseHall_1_AP
+  - platform: command_line
+    name: Rose_Garden_Hall_AP
+    command: 'ping -c 1 X.X.X.X223 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Facilities_AP
+  - platform: command_line
+    name: Facilities_AP
+    command: 'ping -c 1 X.X.X.X237 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#WOW_AP
+  - platform: command_line
+    name: WOW_AP
+    command: 'ping -c 1 X.X.X.X224 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#VisitorS_services_AP
+  - platform: command_line
+    name: Visitors_Services_AP
+    command: 'ping -c 1 X.X.X.X220 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Rose_Garden_breezeway_AP
+  - platform: command_line
+    name: Rose_Garden_Breezeway_AP
+    command: 'ping -c 1 X.X.X.X229 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Tollbooth_AP
+  - platform: command_line
+    name: Tollbooth_AP
+    command: 'ping -c 1 X.X.X.X226 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Cafe_ap
+  - platform: command_line
+    name: Cafe_AP
+    command: 'ping -c 1 X.X.X.X227 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Library_AP
+  - platform: command_line
+    name: Library_AP
+    command: 'ping -c 1 X.X.X.X230 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Outdoor1_Baker_hall_AP
+  - platform: command_line
+    name: OUTDOOR1_BakerHall_AP
+    command: 'ping -c 1 X.X.X.X232 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Greenhouse_AP
+  - platform: command_line
+    name: Greenhouse_AP
+    command: 'ping -c 1 X.X.X.X228 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Outdoor2_Ticket_hut_AP
+  - platform: command_line
+    name: OUTDOOR2_TicketHut_AP
+    command: 'ping -c 1 X.X.X.X233 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Servers
+#GardenExp
+  - platform: command_line
+    name: GardenExp
+    command: 'ping -c 1 X.X.X.X211 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#Sql03
+  - platform: command_line
+    name: SQL03
+    command: 'ping -c 1 X.X.X.X203 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#DC02
+  - platform: command_line
+    name: DC02
+    command: 'ping -c 1 X.X.X.X205 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#nbgs-hv01
+  - platform: command_line
+    name: HV01
+    command: 'ping -c 1 X.X.X.X200 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+#xibo
+  - platform: command_line
+    name: XIBO
+    command: 'ping -c 1 X.X.X.X253 | grep "1 received" | wc -l'
+    #device_class: connectivity
+    #payload_on: 1
+    #payload_off: 0
+
+#systemMonitor(localmachine)
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_use_percent
+      - type: disk_use_percent
+#haveibeenpowned
+  - platform: haveibeenpwned
+    email:
+      - administrator@nbgs.org
+      - nbgeducation@gmail.com
+      - education@nbgs.org
+      - doug.ward@nbgs.org
+      - don.brown@nbgs.org
+      - david.foss@nbgs.org
+      - kelly.welsh@nbgs.org
+      - dougward@nbgs.onmicrosoft.com
+      - nbgsaltru@gmail.com
+#apcupsd(sensor)
+  - platform: apcupsd
+    #name: "UPS1"
+    resources:
+      - apc
+      - date
+      - hostname
+      - version
+      - upsname
+      - cable
+      - driver
+      - upsmode
+      - starttime
+      - model
+      - status
+      - linev
+      - loadpct
+      - bcharge
+      - timeleft
+      - mbattchg
+      - mintimel
+      - maxtime
+      - maxlinev
+      - minlinev
+      - outputv
+#signSensor
+  - platform: command_line
+    name: Traffic Sign
+    json_attributes:
+      - ERROR
+      - Message
+      - STATUS
+      - PAGE1
+      - PAGE2
+      - PAGE3
+      - PAGE4
+      - BOARDS
+      - BATTERY
+      - SOLAR
+      - OUTPUTS
+      - INPUTS
+      - DATE
+      - TIME
+      - LAT
+      - LON
+      - SPEED
+      - COURSE
+      - UTC
+      - MODEMRESET
+    command: /config/python_scripts/sign.sh
+    value_template: >-
+      {% if value_json.STATUS=="OK" %}
+        {{value_json.STATUS}}
+      {% else %}
+        {{value_json.ERROR}}
+      {% endif %}
+
+#IF THAT DOES WORK, TRY {{value_json.STATUS}} INPLACE OF STATE_ATTR(ETC
+
+#value_template: '{{ value_json.STATUS }}'
+
+#INDIVIDUAL SIGN SENSORS
+  - platform: template
+    sensors:
+      traffic_sign_error:
+        friendly_name: Traffic Sign ERROR
+        value_template: '{{ states.sensor.traffic_sign.attributes["ERROR"] }}'
+      traffic_sign_message:
+        friendly_name: Traffic Sign MESSAGE
+        value_template: '{{ states.sensor.traffic_sign.attributes["Message"] }}'
+      traffic_sign_status:
+        friendly_name: Traffic Sign STATUS
+        value_template: '{{ states.sensor.traffic_sign.attributes["STATUS"] }}'
+      traffic_sign_page1:
+        friendly_name: Traffic Sign PAGE1
+        value_template: '{{ states.sensor.traffic_sign.attributes["PAGE1"] }}'
+      traffic_sign_page2:
+        friendly_name: Traffic Sign PAGE2
+        value_template: '{{ states.sensor.traffic_sign.attributes["PAGE2"] }}'
+      traffic_sign_page3:
+        friendly_name: Traffic Sign PAGE3
+        value_template: '{{ states.sensor.traffic_sign.attributes["PAGE3"] }}'
+      traffic_sign_page4:
+        friendly_name: Traffic Sign PAGE4
+        value_template: '{{ states.sensor.traffic_sign.attributes["PAGE4"] }}'
+      traffic_sign_boards:
+        friendly_name: Traffic Sign BOARDS
+        value_template: '{{ states.sensor.traffic_sign.attributes["BOARDS"] }}'
+      traffic_sign_battery:
+        friendly_name: Traffic Sign BATTERY
+        value_template: '{{ states.sensor.traffic_sign.attributes["BATTERY"] }}'
+      traffic_sign_solar:
+        friendly_name: Traffic Sign SOLAR
+        value_template: '{{ states.sensor.traffic_sign.attributes["SOLAR"] }}'
+      traffic_sign_outputs:
+        friendly_name: Traffic Sign OUTPUTS
+        value_template: '{{ states.sensor.traffic_sign.attributes["OUTPUTS"] }}'
+      traffic_sign_inputs:
+        friendly_name: Traffic Sign INPUTS
+        value_template: '{{ states.sensor.traffic_sign.attributes["INPUTS"] }}'
+      traffic_sign_date:
+        friendly_name: Traffic Sign DATE
+        value_template: '{{ states.sensor.traffic_sign.attributes["DATE"] }}'
+      traffic_sign_time:
+        friendly_name: Traffic Sign TIME
+        value_template: '{{ states.sensor.traffic_sign.attributes["TIME"] }}'
+      traffic_sign_lat:
+        friendly_name: Traffic Sign LAT
+        value_template: '{{ states.sensor.traffic_sign.attributes["LAT"] }}'
+      traffic_sign_lon:
+        friendly_name: Traffic Sign LON
+        value_template: '{{ states.sensor.traffic_sign.attributes["LON"] }}'
+      traffic_sign_speed:
+        friendly_name: Traffic Sign SPEED
+        value_template: '{{ states.sensor.traffic_sign.attributes["SPEED"] }}'
+      traffic_sign_course:
+        friendly_name: Traffic Sign COURSE
+        value_template: '{{ states.sensor.traffic_sign.attributes["COURSE"] }}'
+      traffic_sign_utc:
+        friendly_name: Traffic Sign UTC
+        value_template: '{{ states.sensor.traffic_sign.attributes["UTC"] }}'
+      traffic_sign_modemreset:
+        friendly_name: Traffic Sign MODEMRESET
+        value_template: '{{ states.sensor.traffic_sign.attributes["MODEMRESET"] }}'
+
+#OLD WAY DON'T NEED TO RUN MULTIPLE SCRIPTS WITH ABOVE WAY
+#  - platform: command_line
+#    name: Traffic Sign MODEMRESET
+#    command: python3 -c "import requests; print(requests.get('http://X.X.X.X58/sign.json').json()['MODEMRESET'])"
+
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+panel_iframe:
+  direct:
+    title: 'Directory'
+    url: 'http://X.X.X.X207/list/'
+    icon: mdi:coffee
+  avert:
+    title: 'AvertX_NVR'
+    url: 'http://X.X.X.X3'
+    icon: mdi:camcorder
+  mdiindex:
+    title: MDI Icon Index
+    icon: mdi:vector-square
+    #url:  https://materialdesignicons.com
+    url: https://cdn.rawgit.com/james-fry/home-assistant-mdi/efd95d7a/home-assistant-mdi.html
+  gatecontrol:
+    title: 'Gate Controller'
+    url: 'http://X.X.X.X207'
+    icon: mdi:cctv
+#  configurator:
+#    title: Configurator
+#    icon: mdi:wrench
+#    url: http://localhost:3218
+   # run in shell nohup sudo ./configurator.py & to put in background
+
+android_ip_webcam:
+  - host: x.x.x.x
+    sensors:
+      - audio_connections
+      - battery_level
+      - battery_temp
+      - battery_voltage
+      - light
+      - motion
+      - pressure
+      - proximity
+      - sound
+      - video_connections
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+  - host: x.x.x.x
+    sensors:
+      - audio_connections
+      - battery_level
+      - battery_temp
+      - battery_voltage
+      - light
+      - motion
+      - pressure
+      - proximity
+      - sound
+      - video_connections
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+#dominos
+dominos:
+  country_code: us
+  first_name: Norfolk
+  last_name: BotanicalGarden
+  email: education@nbgs.org
+  phone: 7574415830
+  address: 6700 Azalea Garden Rd. Norfolk, Va 23518
+  show_menu: 1
+  orders:
+  - name: Medium Pan
+    codes:
+#      - 10SCREEN
+#      - 12SCREEN
+#      - 12THIN
+#      - PBKIREZA
+#      - 14SCREEN
+#      - 14THIN
+#      - P16IBKZA
+#      - P10IGFZA
+      - P12IPAZA
+  - name: Plain Wings
+    codes:
+      - W08PPLNW
+  - name: Chicken Alfredo
+    codes:
+      - PINPASCA
+
+#domioes custom panel
+panel_custom:
+  - name: dominos
+    sidebar_title: Dominos
+    sidebar_icon: mdi:pizza
+    url_path: dominos
+
+
+
+#adminTVmediaPlayer
+media_player:
+  - platform: aquostv
+    host: X.X.X.X107
+    power_on_enabled: True
+camera:
+  - platform: mjpeg
+    mjpeg_url: http://X.X.X.X103/mjpg/video.mjpg?resolution=320x240
+device_tracker:
+  - platform: mqtt_json
+    devices:
+      traffic_sign: location/traffic/sign
+  - platform: google_maps
+    username: XXXXXXXXXX
+    password: XXXXXXXXXX
+
+#switch
+switch:
+  - platform: mqtt
+    name: "nodemcu"
+    state_topic: "nodemcu/stat/POWER1"
+    command_topic: "nodemcu/cmnd/Power1"
+#    availability_topic: "nodemcu/tele/STATE/"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#swich2
+  - platform: mqtt
+    name: "nodemcu2"
+    state_topic: "nodemcu/stat/POWER2"
+    command_topic: "nodemcu/cmnd/Power2"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#switch3
+  - platform: mqtt
+    name: "nodemcu3"
+    state_topic: "nodemcu/stat/POWER3"
+    command_topic: "nodemcu/cmnd/Power3"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#switch4
+  - platform: mqtt
+    name: "nodemcu4"
+    state_topic: "nodemcu/stat/POWER4"
+    command_topic: "nodemcu/cmnd/Power4"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#switch5
+  - platform: mqtt
+    name: "nodemcu5"
+    state_topic: "nodemcu/stat/POWER5"
+    command_topic: "nodemcu/cmnd/Power5"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#switch6
+  - platform: mqtt
+    name: "nodemcu6"
+    state_topic: "nodemcu/stat/POWER6"
+    command_topic: "nodemcu/cmnd/Power6"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#switch7
+  - platform: mqtt
+    name: "nodemcu7"
+    state_topic: "nodemcu/stat/POWER7"
+    command_topic: "nodemcu/cmnd/Power7"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#switch8
+  - platform: mqtt
+    name: "nodemcu8"
+    state_topic: "nodemcu/stat/POWER8"
+    command_topic: "nodemcu/cmnd/Power8"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+    state_on: "ON"
+    state_off: "OFF"
+#shell_command
+shell_command:
+  failover: /config/python_scripts/failover.sh
+  fallback: /config/python_scripts/fallback.sh
+  test: /config/python_scripts/testscript.sh
