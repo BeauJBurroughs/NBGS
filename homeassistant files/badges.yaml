@@ -1,0 +1,52 @@
+
+green_badge:
+  label-badge-red: green
+  label-badge-border-color: lightgrey
+  label-badge-background-color: white
+  label-badge-text-color: black
+  paper-item-icon-color: 'var(--primary-text-color)'                              # Icon color
+  paper-item-icon-active-color: '#29b613'
+
+grey_badge:
+  label-badge-red: grey
+  label-badge-border-color: lightgrey
+  label-badge-background-color: white
+  label-badge-text-color: grey
+
+black_badge:
+  label-badge-red: black
+  label-badge-border-color: lightgrey
+  label-badge-background-color: white
+  label-badge-text-color: black
+
+brown_badge:
+  label-badge-red: brown
+  label-badge-border-color: brown
+  label-badge-background-color: white
+  label-badge-text-color: brown
+
+orange_badge:
+  label-badge-red: orange
+  label-badge-border-color: orange
+  label-badge-background-color: white
+  label-badge-text-color: orange
+
+blue_badge:
+  label-badge-red: blue
+  label-badge-border-color: blue
+  label-badge-background-color: white
+  label-badge-text-color: blue
+
+yellow_badge:
+  label-badge-red: grey
+  label-badge-border-color: yellow
+  label-badge-background-color: lightgrey
+  label-badge-text-color: yellow
+
+red_badge:
+  label-badge-red: red
+  label-badge-border-color: red
+  label-badge-background-color: red
+  label-badge-text-color: white
+  paper-item-icon-color: 'var(--primary-text-color)'                              # Icon color
+  paper-item-icon-active-color: '#f95336'
