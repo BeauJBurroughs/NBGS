@@ -1,0 +1,4 @@
+these bash files are to be exectuted through docker not from host machine.
+
+The docker, ssh into the host machine to run the python files on th host machine. it then returns the feedback(output) to the docker(homeassistant).
+
