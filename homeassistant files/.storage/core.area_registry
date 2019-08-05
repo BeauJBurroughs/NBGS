@@ -1,0 +1,47 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "d9d33d820a5e4aa297222f1616be0ee2",
+                "name": "Education"
+            },
+            {
+                "id": "d56467c1912849a3aa75a05198c75a51",
+                "name": "BakerHall"
+            },
+            {
+                "id": "126c145e183740a0acfb4ea71d7eb82c",
+                "name": "Greenhouse"
+            },
+            {
+                "id": "801698954c044db89df5c37136790f3e",
+                "name": "TollBooth"
+            },
+            {
+                "id": "b920594129b9405cae7549d725b51f80",
+                "name": "Hort"
+            },
+            {
+                "id": "91b4942a5f5a443096b637c1f1363132",
+                "name": "Maintenance"
+            },
+            {
+                "id": "f9d598aec3974000bf8795e7aa37b9df",
+                "name": "WOW"
+            },
+            {
+                "id": "f31626fedd394a3288bfdf8f4ea3dac1",
+                "name": "Admin"
+            },
+            {
+                "id": "90e191ed2e0d40108df54857a3aa5c39",
+                "name": "Giftshop"
+            },
+            {
+                "id": "eee903cd305246adbb2a307f60668ce4",
+                "name": "Cafe"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
