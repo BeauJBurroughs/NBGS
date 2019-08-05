@@ -1,0 +1,370 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "admin",
+                    "id": "9dd4695be83641e09680390e5340ffa1",
+                    "user_id": "eb61a396dd76418787399e31756facc0"
+                },
+                "context": {
+                    "id": "adf759e3b0144085b395a68f51f123d7",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.admin",
+                "last_changed": "2019-07-30T14:38:40.083798+00:00",
+                "last_updated": "2019-07-30T14:38:55.898710+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "xibo notification",
+                    "id": "1563289874035",
+                    "last_triggered": "2019-08-03T01:15:09.905112+00:00"
+                },
+                "context": {
+                    "id": "68677c54bdd34d8692d38cbfa957c491",
+                    "parent_id": "daee3afdb6ef402dad45744347f5a62e",
+                    "user_id": null
+                },
+                "entity_id": "automation.xibo_notification",
+                "last_changed": "2019-07-30T14:38:40.084054+00:00",
+                "last_updated": "2019-08-03T01:15:09.905604+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "cox_goes_off",
+                    "id": "1563384684191",
+                    "last_triggered": "2019-07-18T06:07:01.025083+00:00"
+                },
+                "context": {
+                    "id": "7bcb032e6a4b43488fa0800472dbbab2",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.cox_goes_off",
+                "last_changed": "2019-07-30T14:38:40.084301+00:00",
+                "last_updated": "2019-07-30T14:38:40.084301+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "cloudy-navyblue",
+                    "id": "1563299936066",
+                    "last_triggered": "2019-08-04T19:42:27.396830+00:00"
+                },
+                "context": {
+                    "id": "cadc50ebeea040819fcc72827c915625",
+                    "parent_id": "1a561fb301bf4a92871f650a0b86b9e0",
+                    "user_id": null
+                },
+                "entity_id": "automation.cloudy_navyblue",
+                "last_changed": "2019-07-30T14:38:40.084517+00:00",
+                "last_updated": "2019-08-04T19:42:27.397014+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "cox_goes_on",
+                    "id": "1563384944768",
+                    "last_triggered": "2019-07-18T20:02:16.695921+00:00"
+                },
+                "context": {
+                    "id": "196c78feb968450fa7caaa3df2ae949c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.cox_goes_on",
+                "last_changed": "2019-07-30T14:38:40.084753+00:00",
+                "last_updated": "2019-07-30T14:38:40.084753+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "lesscloudy-cyan",
+                    "id": "1563305406983",
+                    "last_triggered": "2019-08-04T08:42:10.729681+00:00"
+                },
+                "context": {
+                    "id": "7442cbeac5854dfbb031c1ea197b08ae",
+                    "parent_id": "1c0e745f34244f87bddcbba22aa3d2bf",
+                    "user_id": null
+                },
+                "entity_id": "automation.lesscloudy_cyan",
+                "last_changed": "2019-07-30T14:38:40.084967+00:00",
+                "last_updated": "2019-08-04T08:42:10.729908+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "set theme at startup",
+                    "id": "1563562055457",
+                    "last_triggered": "2019-07-30T14:38:55.941789+00:00"
+                },
+                "context": {
+                    "id": "fd38ef1c381f4f2791ce440949fd48b0",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_theme_at_startup",
+                "last_changed": "2019-07-30T14:38:40.085183+00:00",
+                "last_updated": "2019-07-30T14:38:55.941994+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "switch_notification_test",
+                    "id": "1563377557577",
+                    "last_triggered": "2019-07-30T23:09:11.410826+00:00"
+                },
+                "context": {
+                    "id": "1ccba4c50a154217a0e70ab1de88057f",
+                    "parent_id": "c72145a877a64149b56eb309fb86b109",
+                    "user_id": null
+                },
+                "entity_id": "automation.switch_notification_test",
+                "last_changed": "2019-07-30T14:38:40.085399+00:00",
+                "last_updated": "2019-07-30T23:09:11.411024+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Traffic Sign Location updater",
+                    "id": "1563978481223",
+                    "last_triggered": "2019-08-05T15:31:10.480853+00:00"
+                },
+                "context": {
+                    "id": "44a2b19aeb8648d4b0af31d062e6f69c",
+                    "parent_id": "aa6a57b177ab410bab111763dc3d1ec8",
+                    "user_id": null
+                },
+                "entity_id": "automation.traffic_sign_location_updater",
+                "last_changed": "2019-07-30T14:38:40.085678+00:00",
+                "last_updated": "2019-08-05T15:31:10.481165+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu6"
+                },
+                "context": {
+                    "id": "28669f39fed94ad0bb9e1f57c95181a6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu6",
+                "last_changed": "2019-07-30T14:38:40.171378+00:00",
+                "last_updated": "2019-07-30T14:38:40.171378+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu3"
+                },
+                "context": {
+                    "id": "2d60570a9e464a1ba10756554bf61007",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu3",
+                "last_changed": "2019-07-30T14:38:40.221686+00:00",
+                "last_updated": "2019-07-30T14:38:40.221686+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu7"
+                },
+                "context": {
+                    "id": "57d9fcabe51b486bb5a254175d44130e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu7",
+                "last_changed": "2019-07-30T14:38:40.270902+00:00",
+                "last_updated": "2019-07-30T14:38:40.270902+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu4"
+                },
+                "context": {
+                    "id": "320ea02360f8425980fdbfa63021f1bf",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu4",
+                "last_changed": "2019-07-30T14:38:40.309378+00:00",
+                "last_updated": "2019-07-30T14:38:40.309378+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu8"
+                },
+                "context": {
+                    "id": "e685e62387a14b8ab33768c1c825f680",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu8",
+                "last_changed": "2019-07-30T14:38:40.314297+00:00",
+                "last_updated": "2019-07-30T14:38:40.314297+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu5"
+                },
+                "context": {
+                    "id": "a2721b8e69ef44c3ad38285a300681c2",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu5",
+                "last_changed": "2019-07-30T14:38:40.332887+00:00",
+                "last_updated": "2019-07-30T14:38:40.332887+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu2"
+                },
+                "context": {
+                    "id": "39a8e9ab836b47c79918c3c602f8a3c8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.nodemcu2",
+                "last_changed": "2019-07-30T14:38:40.344767+00:00",
+                "last_updated": "2019-07-30T14:38:40.344767+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nodemcu"
+                },
+                "context": {
+                    "id": "42f7e34623164c74b491e2eb60afa119",
+                    "parent_id": null,
+                    "user_id": "eb61a396dd76418787399e31756facc0"
+                },
+                "entity_id": "switch.nodemcu",
+                "last_changed": "2019-07-31T14:15:06.421727+00:00",
+                "last_updated": "2019-07-31T14:15:06.421727+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Speedtest Upload",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "e8abacda60ad446590b14c133cc1f330",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_upload",
+                "last_changed": "2019-08-05T15:12:39.894486+00:00",
+                "last_updated": "2019-08-05T15:12:39.894486+00:00",
+                "state": "44.89"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Speedtest Ping",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "ms"
+                },
+                "context": {
+                    "id": "a7dc1251ff5e40c69fa6cba089c87d1d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_ping",
+                "last_changed": "2019-08-05T15:12:39.896011+00:00",
+                "last_updated": "2019-08-05T15:12:39.896011+00:00",
+                "state": "24.636"
+            }
+        },
+        {
+            "last_seen": "2019-08-05T15:31:20.001308+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Speedtest Download",
+                    "icon": "mdi:speedometer",
+                    "unit_of_measurement": "Mbit/s"
+                },
+                "context": {
+                    "id": "e754fd696ed1447b87bfe41f3cec4f95",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.speedtest_download",
+                "last_changed": "2019-08-05T15:12:39.896878+00:00",
+                "last_updated": "2019-08-05T15:12:39.896878+00:00",
+                "state": "133.99"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
