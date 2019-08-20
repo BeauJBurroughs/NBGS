@@ -1,0 +1,29 @@
+connection=wifi
+network_interface=wlan0
+dhcp=yes
+wifi_encryption=eap-peap
+ssid_name=NBGS
+peap_password=****
+peap_username=****
+
+
+
+connection=wired
+network_interface=eth0
+dhcp=yes
+
+proxy=
+
+browser=chrome
+homepage=gardenexplorer.nbgs.org
+session_idle_forced=5
+touchscreen_calibration="HID 1aad:0001" "Evdev Axis Calibration" 32 1501 3413 831 2367
+persistence=full # remove this one
+disable_private_mode=yes
+root_password=**********
+vnc_interactive=yes
+vnc_password=**********
+wallpaper=hdbloggers.net/wp-content/uploads/2016/07/Flower-Wallpaper-9.jpg
+whitelist=gardenexplorer.nbgs.org norfolkbotanicalgarden.org
+wake_on_lan=yes
+additional_components=09-x11vnc.xzm uefi.zip 08-ssh.xzm 
